@@ -1,0 +1,23 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+#home_controller {
+	.hmenu {
+	  list-style-type: none;
+
+		li {
+			float: right;
+		}
+
+		a {
+	    text-decoration: none;
+			display: block;
+			padding: 3px 10px;
+
+			&:hover {
+				background: #DBEBF6;
+			}
+		}
+	}
+}
