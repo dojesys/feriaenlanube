@@ -50,4 +50,8 @@ Spork.each_run do
   #     DatabaseCleaner.strategy = :transaction
   #   end
   #
+  OmniAuth.config.mock_auth[:facebook] = {
+    'uid' => '123545',
+    'extra' => { 'user_hash' => { 'email' => 'user@test.com' } }
+  }
 end

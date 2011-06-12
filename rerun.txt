@@ -1,1 +1,0 @@
-features/users/sign_in.feature features/users/sign_in.feature features/users/sign_in.feature features/users/sign_out.feature features/users/sign_up.feature features/users/sign_up.feature features/users/sign_up.feature features/users/sign_up.feature features/users/sign_up.feature features/users/user_edit.feature

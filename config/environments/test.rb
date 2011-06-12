@@ -39,5 +39,7 @@ Feriaenlanube::Application.configure do
   
   # Devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # Omniauth
+  OmniAuth.config.test_mode = true
   
 end

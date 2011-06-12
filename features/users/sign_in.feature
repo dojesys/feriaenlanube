@@ -30,3 +30,8 @@ Feature: Sign in
       And I should be signed in
       When I return next time
       Then I should be already signed in
+
+    Scenario: User signs in successfully with facebook
+      Given I am not logged in
+      When I follow "Sign in with Facebook"
+      Then I should see "Successfully authorized from Facebook account."
