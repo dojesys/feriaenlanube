@@ -1,5 +1,9 @@
 Feriaenlanube::Application.routes.draw do
 
+  get "profile/:id" => "profiles#edit", :as => :profile
+  
+  put "profile/:id" => "profiles#update"
+  
   get "users/show"
 
   get "home/index"

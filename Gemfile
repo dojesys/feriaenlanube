@@ -15,6 +15,7 @@ gem 'uglifier'
 gem 'jquery-rails'
 
 gem 'haml-rails'
+gem 'simple_form'
 gem 'thin'
 
 gem 'devise'
@@ -55,3 +56,4 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+gem "mocha", :group => :test

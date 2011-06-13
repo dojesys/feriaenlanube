@@ -4,20 +4,6 @@
 */
 #devise-sessions_controller, #devise-registrations_controller {
 	.hmenu {
-	  list-style-type: none;
-
-		li {
-			float: right;
-		}
-
-		a {
-	    text-decoration: none;
-			display: block;
-			padding: 3px 10px;
-
-			&:hover {
-				background: #DBEBF6;
-			}
-		}
+		@include hmenu;
 	}
 }

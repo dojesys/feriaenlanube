@@ -1,6 +1,10 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
+  has_one :profile, :dependent => :destroy
+  
+  after_create :create_profile
+    
   devise :database_authenticatable, :registerable, :omniauthable,
          :recoverable, :rememberable, :trackable, :validatable
 
@@ -15,4 +19,12 @@ class User < ActiveRecord::Base
       User.create!(:email => data["email"], :password => Devise.friendly_token[0,20]) 
     end
   end
+
+  protected
+  
+  def create_profile
+    profile = Profile.new
+    self.profile = profile
+  end
 end
+

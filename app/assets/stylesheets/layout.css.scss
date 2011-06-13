@@ -1,6 +1,23 @@
 $primary_body_color: #4b7399;
 $admin_body_color: #1B7A36;
 
+@mixin hmenu {
+	list-style-type: none;
+
+	li {
+		float: right;
+	}
+
+	a {
+    text-decoration: none;
+		display: block;
+		padding: 3px 10px;
+
+		&:hover {
+			background: #DBEBF6;
+		}
+	}
+}
 
 body {
   background-color: $primary_body_color;

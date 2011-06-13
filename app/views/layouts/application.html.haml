@@ -18,15 +18,6 @@
       - if show_title?
         %h1= yield(:title)
 
-      %ul.hmenu
-        = render 'devise/menu/registration_items'
-        = render 'devise/menu/login_items'
-        
-        - if not user_signed_in?
-          %li= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
-        - else
-          %li= link_to('Admin', admin_path)
-        
-        %li= link_to('Home', root_path)
+      = render 'layouts/top_menu'
 
       = yield

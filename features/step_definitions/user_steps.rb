@@ -10,9 +10,9 @@ Given /^I am a user named "([^"]*)" with an email "([^"]*)" and password "([^"]*
 end
 
 Given /^I am a user with an email "([^"]*)" and password "([^"]*)"$/ do |email, password|
-    User.new(:email => email,
-             :password => password,
-             :password_confirmation => password).save!
+  User.new(:email => email,
+            :password => password,
+            :password_confirmation => password).save!
 end
 
 Given /^I am a new, authenticated user$/ do

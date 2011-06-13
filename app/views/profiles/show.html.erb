@@ -1,0 +1,35 @@
+<% title "Profile" %>
+
+<p>
+  <strong>Display Name:</strong>
+  <%= @profile.display_name %>
+</p>
+<p>
+  <strong>About:</strong>
+  <%= @profile.about %>
+</p>
+<p>
+  <strong>Gender:</strong>
+  <%= @profile.gender %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%= @profile.location %>
+</p>
+<p>
+  <strong>Website:</strong>
+  <%= @profile.website %>
+</p>
+<p>
+  <strong>Birthday:</strong>
+  <%= @profile.birthday %>
+</p>
+<p>
+  <strong>Picture:</strong>
+  <%= @profile.picture %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_profile_path(@profile) %> |
+  <%= link_to "View All", profiles_path %>
+</p>
